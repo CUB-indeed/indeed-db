@@ -1,0 +1,17 @@
+# This action is used to call another action in CUB-indeed/actions
+
+name: Upload Python Package
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    uses: CUB-indeed/actions/.github/workflows/publish-python.yml@main
+    with:
+      runs-on: "ubuntu-latest"
+    secrets: inherit

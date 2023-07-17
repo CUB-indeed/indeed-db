@@ -1,0 +1,10 @@
+# This action is used to call another action in CUB-indeed/actions
+
+name: Verify Python
+
+on: [pull_request, push]
+
+jobs:
+  release:
+    uses: CUB-indeed/actions/.github/workflows/verify-python.yml@main
+    secrets: inherit
