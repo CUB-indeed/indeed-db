@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "indeed_db"
+version = "0.0.1"
+authors = [
+  { name="Indeed", email="author@example.com" },
+]
+description = "A package to manage serveral databases"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "neo4j",
+    "pymongo",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/CUB-indeed/indeed-db"
+"Bug Tracker" = "https://github.com/CUB-indeed/indeed-db/issues"
